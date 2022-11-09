@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Registration form </title>
+
+    </head>
+    <body>
+        <from>
+        
+        <div>
+            <lable>Enter First Name</lable>
+            <input type="text" name="firstName">
+        </div>
+        <br>
+        <div>
+           <h1> <lable>Enter Last Name</lable></h1>
+             <input type="text" name="latName">
+           
+        </div>
+        <br>
+        <div>
+            <lable>Enter Emai Id</lable>
+            <input type="text" name="email">
+        </div>
+        <br>
+        <div>
+            <lable>Enter Password</lable>
+            <input type="Password" name="Password">
+        </div>
+        <br>
+        <div>
+            <lable>Select Gender</lable>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </div>
+        <br>
+        <div>
+            <select>
+               <lable>Select City</lable>
+                <option>TamilNadu</option>
+                <option>Ooty</option>
+                <option>Dharmapuri</option>
+                <option>Hosur</option>
+                <option>Bangalore</option>
+                <option>Chennai</option>
+            </select>
+        </div>
+        <div>
+            <select>
+                <lable>Select Date Of Birth</lable>
+                <year>1997</year>
+                <year>1897</year>
+            </select>
+        </div>
+        <div>
+            <select>
+                <date>25</date>
+                <date>20</date>
+            </select>
+        </div>
+        <div>
+            <select>
+                <month>5</month>
+                <month>7</month>
+            </select>
+        </div>
+    </from>
+ </body>

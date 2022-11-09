@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Registration From </title>
+
+    </head>
+    <body>
+                <!--div meanse line by line >.  <--br is a douwn space-->
+        <from>
+        <div> <lable>Eenter First Name </lable>
+            <input type="text" name="firstName"
+            placeholder="Enter First Name" required minlength="2" maxlength="12">
+        </div> 
+             <br>
+          </h1> <div> <lable>Enter Last Name</lable>
+            <input type="text" name="lastName" recuired> 
+        </div>
+            <br>
+            <div>
+                <lable>Enter Age</lable>
+                <input type="number" name="age">
+            </div>
+            <br>
+            <!--email-->
+        <div><lable>Enter Email Id</lable>
+            <input type="text" name="email">
+        </div>
+        <br>
+        <div> <lable>Enter Password</lable>
+        <input type="password" name="password" required minlength="6" maxlength="12">
+        </div>
+        <br>
+        <div>
+            <lable>Select Gender</lable>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+        </div>
+        <br>
+        <div>
+            <lable>Select City</lable>
+            <select>
+                <option>Begalore</option>
+                <option>Mangalore</option>
+                <option>Mysure</option>
+                <option>Dharmapuri</option>
+                <option>TamilNadu</option>
+            </select>
+        </div>
+        <br>
+        <!--Dtae of birth, Mobile Number, Address-->
+        <div>
+          
+            <lable>select course</lable>
+           <!-- <input type="checkbox">java
+            <input type="checkbox">Python
+            <input type="checkbox">DotNet -->
+            <input type="radio" name="select course">java
+            <input type="radio" name="select course">Python
+            <input type="radio" name="select course">DotNet
+        </div>
+        <br>
+        <div>
+            <select>
+                <labale>Select DateOfBirth</labale>
+                <input type="date"  name="dateOfBirth">
+            </select>
+        </div>
+        <br>
+        <div>
+                <lable>Enter Mobile Number</lable>
+                <input type="tel" name="MobileNumber"placeholder="+91 8282674387" required maxlength="10">
+            
+        </div>
+        <br>
+        <div>
+
+             <lable>Enter Address</lable>
+            <textarea name="" id="" cols="5" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <lable>Select File/Resume</lable>
+            <input type="file" name="uploadfile">
+        </div>
+        <br>
+        <div>
+            <!--<input="submit">-->
+            <button type="submit">submit</button>
+        </div>
+        
+        </from>
+    </body>

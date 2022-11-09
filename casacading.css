@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascading</title>
+    <!---selector{
+        property value;
+    -->
+    <style>
+        h1 {
+            color: rgb(133, 131, 114);
+            font-size: 120px; 
+            font-style: normal; 
+            text-decoration: underline;
+            
+        }
+        h2 , h3{
+            color: rgb(222, 25, 25);
+            font-size: 100px; 
+            font-style: normal ; 
+            text-transform: uppercase;
+        }
+          classselector{
+            color: green  (222, 25, 25);
+            font-size: 100px; 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-transform: uppercase;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1>Cascading Stylesheet</h1>
+    <h2>Cascading Stylesheet</h2>
+    <h3>Class Selector</h3>
+
+    <h4 class="classSelector" classSelector </h4>
+        
+    
+</body>
+</html>

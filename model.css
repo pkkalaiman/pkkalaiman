@@ -1,0 +1,19 @@
+.box{
+
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    padding: 10px 20px 30px 40px;
+    border: 10px dotted green;
+    margin: 10px;
+    background-color: violet;
+}
+
+.rect{
+    border: 2px solid blue;
+    height: 200px;
+    width: 40px;
+}
+
