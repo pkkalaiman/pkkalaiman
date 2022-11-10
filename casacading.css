@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
+<! doctype <html>
+<html>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,17 +28,15 @@
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
             text-transform: uppercase;
         }
-        
-
     </style>
-</head>
+
 <body>
     <h1>Cascading Stylesheet</h1>
     <h2>Cascading Stylesheet</h2>
     <h3>Class Selector</h3>
-
-    <h4 class="classSelector" classSelector </h4>
-        
-    
+    <h4 class="classSelector" classSelector </h4> 
 </body>
+
+</head>
+
 </html>
