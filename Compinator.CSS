@@ -1,0 +1,87 @@
+/*Descendant Selector*/
+div p{
+    color: chartreuse;
+}
+
+/*Child Cherector*/
+div > p {
+    color: rgb(0, 255, 115);
+}
+
+/*Adjacent Sibling Selector*/
+div + p {
+    color: rgb(68, 231, 36);
+}
+
+/*General Sibling Selector*/
+div ~ p {
+    color: rgb(34, 20, 233);
+}
+
+/*Position top, right, bottom, left */
+.static {
+    position: static;
+    left: 100px;
+}
+
+.relative {
+    bottom: 200px;
+    top: 200px;
+    left: 100px;
+    right: 200px;
+    position: relative;
+}
+
+.absolute {
+    top: 0%;
+    right: 0%;
+    position: absolute;
+}
+
+.imageparent {
+    position: relative;
+
+}
+
+/*img {
+    width: 100px;
+}*/
+
+img {
+    border-radius: 10px;
+}
+
+body {
+    margin: 10px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: brown;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background-color: chartreuse;
+}
+
+ul{
+    list-style-type: none;
+    color: aqua;
+    background-color: darkred;
+}
+li{
+    padding:3px;
+    margin: 0%;
+    color: deeppink;
+}
+
+
+
+
+
+
+

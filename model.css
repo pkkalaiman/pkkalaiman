@@ -1,19 +1,70 @@
 .box{
 
     padding-bottom: 30px;
-    padding-top: 30px;
-    padding-left: 30px;
+    padding-top: 300px;
+    padding-left: 200px;
     padding-right: 30px;
 
     padding: 10px 20px 30px 40px;
-    border: 10px dotted green;
+    border: 30px dotted green;
     margin: 10px;
     background-color: violet;
 }
 
 .rect{
+    padding: 20pc 30px 40px 50px;
     border: 2px solid blue;
-    height: 200px;
-    width: 40px;
+    height: 400px;
+    width: 200px;
+    background-color: brown;
+}
+.rect1{
+    border: 2px solid yellow;
+    height: 400px;
+    width: 200px;
+    margin: 40px;
+    background-color: brown;
+    display: inline-flexbox;
 }
 
+.rect2{ 
+    border: 3px solid green;
+    height: 400px;
+    width: 300px;
+    margin: 50px;
+    background-color: blanchedalmond;
+    display: inline-flexbox;
+}
+
+.rect3{
+    border: 3px solid chartreuse;
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+}
+.rect4{
+    border: 3px solid crimson;
+    height: 300px;
+    width: 400px;
+    display: inline-block;
+}
+
+body{
+    
+        background-image: url(nature.jpg);
+        height: 500px;
+        width: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* CSS compinatior
+
+select - 
+element - selector
+
+1.Descedant Selector
+2. Child Selector
+3. Adjecent Siblining Selector
+4.General Sublining Selector
+*/

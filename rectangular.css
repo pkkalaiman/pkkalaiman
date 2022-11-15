@@ -1,0 +1,18 @@
+.box{
+    padding-bottom: 30px;
+    padding-left: 35px;
+    padding-top: 40px;
+    padding-right: 36px;
+
+    padding: 20px 70px 80px 90px;
+    border: 40px dotted yellow;
+    margin: 30px;
+    background-color: chartreuse;
+}
+
+.rect{
+    border: 20px solid green;
+    height: 300px;
+    width: 340px; 
+}
+
