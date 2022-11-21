@@ -1,0 +1,27 @@
+.root{
+	background:green;
+	color: 120px;
+	width:12px;
+	display:13px;
+	height:14px;
+}
+#progress:after {
+    padding: 10px 20px 30px 34px;
+    display: block;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px
+}
+#progress1 {background: var(--process);border-radius: 13px;height: 8px;width: 100%;}
+.progress1 p {
+    padding: 120px;
+    display: block;
+    background-color: chartreuse;
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+#Intrerest {
+    font-weight: bold;
+}
+
