@@ -8,10 +8,13 @@
 
     <script>
         console.log("Indrodection to javascript")
-        document.write("Indrodection to javascript")
+        document.write("<h1>Indrodection to javascript</h1>")
         document.write("<h2>Welcom to javascript</h2>")
         document.write("<h3>Welcom to javascript</h3>")
         document.write("<h4>Welcom to javascript</h4>")
+        document.write("<h5>Welcom to javascript</h5>")
+        document.write("<h6>Welcom to javascript</h6>")
+        document.write("<h7>Welcom to javascript</h7>")
 
         var a;//variable declaration
         // var meanse variablename
@@ -72,14 +75,60 @@
         console.log(res)
         document.write(res)
 
-        if(result =confirm("What is mail id")){
-            console.log(result)
+        if(res == 'mani'){
+           // document.write("<br>")
+            document.write('<br>',res)
 
         } else{
-            console.log(result)
-            document.write(result)
-
+            //console.log(result)
+            document.write('<br>' ,"javaScript")
         }
+
+        //How to pass argument to function in Js
+
+        function add(a ,b){
+            document.write("calling display")
+            document.write(a+b)
+        }
+
+        add(10,20)
+        add(20,30)
+
+        //How to retur data from function in Js
+
+        function sub(a,b){
+            return a-b
+        }
+
+        let result = sub(20,10)
+        console.log(result)
+
+        //Hot to declear constent in js
+
+        const pi = 3.14
+         console.log(pi)
+       //document.write(pi)
+
+       //Print star pattern in js
+       function startPattern() {
+        document.write('<br>')
+       for(let i=0;i<3;i++){
+        for(let j=0;j<=i;j++){
+             document.write("#")
+             document.write("mani")
+        }
+        document.write("<br>")
+       }
+    }
+
+    //Event Handalling
+    //onclick (or) press , onmouseover
+
+
+       //Web , java, database
+
+
+
 
        
 
@@ -87,5 +136,8 @@
 </head>
 <body>
     <!--Javascript will be written in head tag-->
+
+    <button onclick="startPattern()">Print start pattern</button>
+    <button onmouseover="startPattern()">Print start pattern</button>
 </body>
 </html>
