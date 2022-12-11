@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function displayData(){
+            
+            console.log("calling displayData")
+            let massage=document.getElementById("massage")
+            console.log(massage)
+            //display inside massage to this steps
+            massage.innerHTML ="calling displayData"
+            massage.style.color = "green"
+        }
+        function details(){
+            console.log("calling details")
+            let name = document.getElementById("name")
+            console.log(name)
+            console.log(name.value)
+            let detail = document.getElementById("details")
+            detail.innerHTML = name.value
+            detail.style.color ="blue"
+        }
+    </script>
+</head>
+<body>
+    <h1>Mani</h1>
+    <!--this is diplay in button inside step-->
+    <div id="massage"></div>
+    <!--this is button clic step-->
+    <button onclick="displayData()">Click me</button>
+   
+    <div>INDIA</div>
+    <button onclick="displayData()">Virat Kholi</button>
+
+    <form>
+      
+            <lable>Enter Name</lable>
+            <input type="text" id="name">
+            
+            <button onmouseover="details()">Submit</button>
+            <div id="details"></div>
+    </form>
+   
+    
+</body>
+</html>
