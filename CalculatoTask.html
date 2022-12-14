@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Task</title>
+
+    <script>
+        function add(){
+            let a=document.getElementById("num1")
+            let b=document.getElementById("num2")
+            let v=parseInt(a.value)
+            let n=parseInt(b.value)
+            let w = document.getElementById("add1")
+            w.innerHTML = v+n
+        }
+        function sub(){
+            let a=document.getElementById("num3")
+            let b=document.getElementById("num4")
+            let v=parseInt(a.value)
+            let n=parseInt(b.value)
+            let w = document.getElementById("sub1")
+            w.innerHTML = v-n
+        }
+        function mult(){
+            let a=document.getElementById("num5")
+            let b=document.getElementById("num6")
+            let v=parseInt(a.value)
+            let n=parseInt(b.value)
+            let w = document.getElementById("mult1")
+            w.innerHTML = v*n
+        }
+        function div(){
+            let a=document.getElementById("num7")
+            let b=document.getElementById("num8")
+            let v=parseInt(a.value)
+            let n=parseInt(b.value)
+            let w = document.getElementById("div1")
+            w.innerHTML = (v/n)
+        }
+    </script>
+</head>
+<body>
+    <Center><h1>Operations</h1>
+    <form>
+        <div>
+            <label>Enter The 1st Num</label>
+            <input type="text" id="num1">
+        </div><br>
+        <div>
+            <label>Enter The 2nd Num</label>
+            <input type="text" id="num2">
+        </div>
+        <div>
+            <button onmouseover="add()">Addition</button></div><br>
+            <div id="add1"> </div>
+    </form>
+    <form>
+        <div>
+            <label>Enter The 1st Num</label>
+            <input type="text" id="num3">
+        </div><br>
+        <div>
+            <label>Enter The 2nd Num</label>
+            <input type="text" id="num4">
+        </div>
+        <div>
+            <button onmouseover="sub()">Substraction</button></div><br>
+            <div id="sub1"> </div>
+    </form>
+        <form>
+            <div>
+                <label>Enter The 1st Num</label>
+                <input type="text" id="num5">
+            </div><br>
+            <div>
+                <label>Enter The 2nd Num</label>
+                <input type="text" id="num6">
+            </div>
+            <div>
+                <button onmouseover="mult()">Multiplication</button></div><br>
+                <div id="mult1"> </div>
+        </form><br>
+        <form>
+            <div>
+                <label>Enter The 1st Num</label>
+                <input type="text" id="num7">
+            </div><br>
+            <div>
+                <label>Enter The 2nd Num</label>
+                <input type="text" id="num8">
+            </div>
+            <div>
+                <button onmouseover="div()">Division</button></div><br>
+                <div id="div1"> </div>
+        </form>
+    
+    
+</body>
+</html>

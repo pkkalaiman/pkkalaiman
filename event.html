@@ -25,6 +25,23 @@
             detail.innerHTML = name.value
             detail.style.color ="blue"
         }
+
+        function addition(){
+            console.log("calling addition")
+            let num1 = document.getElementById("num1")
+            console.log(num1)
+            let number2 =document.getElementById("number2")
+            console.log(number2)
+            console.log(num1.value)
+            console.log(number2.value)
+            let result =parseInt (num1.value) + parseInt (number2.value)
+            console.log(result)
+
+            let additionMassage =document.getElementById("additionMassage")
+            additionMassage.innerHTML = result
+            additionMassage.style.color = 'green'
+
+        }
     </script>
 </head>
 <body>
@@ -33,9 +50,6 @@
     <div id="massage"></div>
     <!--this is button clic step-->
     <button onclick="displayData()">Click me</button>
-   
-    <div>INDIA</div>
-    <button onclick="displayData()">Virat Kholi</button>
 
     <form>
       
@@ -44,6 +58,16 @@
             
             <button onmouseover="details()">Submit</button>
             <div id="details"></div>
+        <div>
+            <label>Enter number</label>
+            <input type="text"  id="num1">&nbsp;&nbsp;
+        </div>
+        <div>
+            <label>Enter Number2</label>
+            <input type="text" id="number2">
+        </div>
+            <button onmouseover="addition()">Submit</button>
+            <div id="additionMassage"></div>
     </form>
    
     

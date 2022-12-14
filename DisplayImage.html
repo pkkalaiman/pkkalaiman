@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function displayImage(){
+            let image = document.createElement("img")
+            image.src = "tour-2.jpeg"
+            image.style.width='200px'
+           document.body.appendChild(image)
+           let loadingImage =document.getElementById("loadingImage")
+            loadingImage.appendChild(image)
+
+            // THIS IS ANOTHER IMAGE TO CREATE STEP
+
+            let image1=document.createElement("img")
+            image1.src = "tour-4.jpeg"
+            image1.style.width = "200px"
+            document.body.appendChild(image1)
+        }
+
+
+    </script>
+</head>
+<body>
+    <div id="loadingImage"></div>
+    <button onclick="displayImage()">Display Image</button>
+   
+
+    
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+   <script>
+     function validation(){
+           console.log("calling validation")
+           let firstName = document.getElementById("firstName")
+           console.log(firstName.value)
+           console.log(firstName.value.length)
+
+     if(firstName.value== ""){
+            console.log("Please enter firstName")
+            let massage =document.getElementById("firstNameMassage")
+            massage.innerHTML = "please enter firstName"
+            massage.style.color = 'red'
+     }
+    if(firstName.value.length == "0"){
+            console.log("please enter firstName")
+     }
+        //String s = "java" 4
+        //String str = "" 0
+/**********************************************************************************************************************************/
+       
+     
+            let Password = document.getElementById("Password")
+            console.log( Password.value)
+            console.log( Password.value.length)
+
+       if(Password.value == ""){
+           console.log("Please enter  Password ")
+           let massage =document.getElementById("PasswordMassage")
+           massage.innerHTML = "please Enter  Password"
+           massage.style.color = 'green'
+       }
+      else if(firstName.value.length < 4){
+           console.log("please enter  Password")
+           let massage =document.getElementById("PasswordMassage")
+           massage.innerHTML = "Please Enter Correct password"
+           massage.style.color = 'blue'
+
+       } else if(firstName.value.length > 8){
+           console.log("please enter  Password")
+           let massage =document.getElementById("PasswordMassage")
+           massage.innerHTML = "Enter Password 8 charecters valid password"
+           massage.style.color = 'blue'
+      }
+      /*************************************************************************************************************************************************/
+    
+   
+          console.log(document.registration.gender)
+          console.log(document.registration.gender[0])
+          console.log(document.registration.gender[0].checked)
+          console.log(document.registration.gender[1].checked)
+          console.log(document.registration.gender[2].checked)
+
+    if(document.registration.gender[0].checked==false &&
+          document.registration.gender[1].checked == false &&
+          document.registration.gender[2].checked == false) {
+
+            console.log("Please Enter Gender")
+            let genderMassage =document.getElementById("genderMassage")
+            genderMassage.innerHTML = "Please Select Gender"
+            genderMassage.style.color = 'red'
+        }
+        //*****************************************************************************************************************************************************
+        
+       /* THIS ONE OF METHON IN CITY*/
+    /*/ if(document.registration.city.value =="0"){
+            console.log(document.registration.city.value)
+            console.log("Please Enter city")
+            let cityMassage =document.getElementById("cityMassage")
+            cityMassage.innerHTML = "Please Select city"
+            cityMassage.style.color = 'pink'
+
+        }*/
+       /*THIS IS ANOTHER METHOD IN CITY*/
+        console.log(document.registration.city)
+        let City = document.registration.City
+        if(city.value == "0"){
+            console.log("Please Select City")
+            let cityMassage = document.getElementById("cityMassage")
+            cityMassage.innerHTML = "Please Select City"
+            cityMassage.style.color = 'yellow'
+        }
+//********************************************************************************************************************************
+}
+     //String s = "java" 4
+       //String str = "" 0
+        //HOW HTML page is loaded in browser
+        //Browser will have an engin called browser engine
+
+      /*  BrowserEngine Will be respomsible to render the web page
+        BrowserEngine will perform 2 steps to load the html page
+
+        1. It reads the html file and creat an object for each html TAG
+        2. Objects are linked to form a tree . this tree is called as DOME(Document Object Model)
+        
+        DOM - It is used to acces and maniuplate html Elements
+
+        Access - document.getElementById
+        maniuplate/modifiy - innerHTML
+
+        // Creat IMAGE dynamically*/
+
+
+     </script>
+
+
+</head>
+<body>
+
+    <form name="registration">
+        <div>
+            <label>Enter First Name</label>
+            <input type="text" name="firstName" id="firstName">
+            <span id="firstNameMassage"></span>
+        </div><br>
+        <div>
+            <label>Enter Password</label>
+           <input type="password" name="Password" id="Password">
+            <span id="PasswordMassage"></span>
+        </div><br>
+        <div>
+            <label>Select Gender</label>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">Others
+            <div id="genderMassage"></div>
+        </div>
+
+        <div>
+            <label>Select City</label>
+            <select name="City" id="city">
+            <option value="0">--select city----</option>
+            <option>TamilNadu</option>
+            <option>England</option>
+           
+        </select>
+        <div id="cityMassage"></div>
+        </div>
+
+        <button type="button" onclick="validation()">Register</button>  
+
+       
+        
+        
+    </form>
+
+    <!-- When user click on button, an event will be generated-->
+    
+</body>
+</html>
