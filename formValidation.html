@@ -26,7 +26,31 @@
         //String str = "" 0
 /**********************************************************************************************************************************/
        
-     
+     let email=document.getElementById("email")
+     console.log( email.value)
+     console.log(email.value.length)
+
+     if(email.value == ""){
+        console.log("Please Enter mail Id")
+        let massage  = document.getElementById("emailMassage")
+        massage.innerHTML = "Please Eneter Mail Id"
+        massage.style.color = 'blue'
+
+     }else if(email.value.length <4){
+        console.log("Please Eneter mail Id")
+        let massage = document.getElementById("emailMassage")
+        massage.innerHTML = "Please Enter Valid Mail Id"
+        massage.style.color = 'yellow'
+
+    }else if(email.value.length >9){
+        console.log('Please enter Mail Id')
+        let massage = document.getElementById("emailMassage")
+        massage.innerHTML = "Enter mail Id is 9 Charecters Valid Id"
+        massage.style.color = 'blue'
+
+    }
+/*****************************************************************************************************************************/
+
             let Password = document.getElementById("Password")
             console.log( Password.value)
             console.log( Password.value.length)
@@ -63,10 +87,20 @@
           document.registration.gender[2].checked == false) {
 
             console.log("Please Enter Gender")
-            let genderMassage =document.getElementById("genderMassage")
+            let gender =document.getElementById("genderMassage")
             genderMassage.innerHTML = "Please Select Gender"
             genderMassage.style.color = 'red'
-        }
+          }
+            let genderData
+            if(document.registration.gender[0].checked == true){
+               genderData=document.registration.gender[0].value
+            }else if(document.registration.gender[1].checked ==true){
+                genderData=document.registration.gender[1].value
+            }else if(document.registration.gender[2].checked==true){
+                genderData=document.registration.gender[2].value
+            }
+            
+        
         //*****************************************************************************************************************************************************
         
        /* THIS ONE OF METHON IN CITY*/
@@ -88,24 +122,34 @@
             cityMassage.style.color = 'yellow'
         }
 //********************************************************************************************************************************
-}
-     //String s = "java" 4
-       //String str = "" 0
-        //HOW HTML page is loaded in browser
-        //Browser will have an engin called browser engine
+let registration = {
+                'firstName' :firstName.value,
+                'Password' : Password.value,
+                'genderData'  : genderData,
+                'City':City.value,
+                'email' : email.value,
 
-      /*  BrowserEngine Will be respomsible to render the web page
-        BrowserEngine will perform 2 steps to load the html page
+            }
+            console.log(registration)
+            console.log(JSON.stringify(registration))
+            let registrationString = JSON.stringify(registration)
 
-        1. It reads the html file and creat an object for each html TAG
-        2. Objects are linked to form a tree . this tree is called as DOME(Document Object Model)
-        
-        DOM - It is used to acces and maniuplate html Elements
+            localStorage.setItem("nonCsr", registrationString)
 
-        Access - document.getElementById
-        maniuplate/modifiy - innerHTML
+    }
+            let tree = {}
+            //tree name, lifespam
+            //key , value pair
 
-        // Creat IMAGE dynamically*/
+            tree ={
+                'name' :'Banyan',
+                'lifespam' : 500
+            }
+            console.log(tree)
+
+           
+
+
 
 
      </script>
@@ -121,15 +165,21 @@
             <span id="firstNameMassage"></span>
         </div><br>
         <div>
+            <label>Enter Email</label>
+            <input type="email" name="email" id="email">
+            <span id="emailMassage"></span>
+        </div>
+        <br>
+        <div>
             <label>Enter Password</label>
            <input type="password" name="Password" id="Password">
             <span id="PasswordMassage"></span>
         </div><br>
         <div>
             <label>Select Gender</label>
-            <input type="radio" name="gender" id="gender">Male
-            <input type="radio" name="gender" id="gender">Female
-            <input type="radio" name="gender" id="gender">Others
+            <input type="radio" name="gender" id="gender" value="male">Male
+            <input type="radio" name="gender" id="gender" value="female">Female
+            <input type="radio" name="gender" id="gender" value="others">Others
             <div id="genderMassage"></div>
         </div>
 
@@ -152,6 +202,26 @@
     </form>
 
     <!-- When user click on button, an event will be generated-->
+   <!--//String s = "java" 4
+    //String str = "" 0
+     //HOW HTML page is loaded in browser
+     //Browser will have an engin called browser engine
+
+   /*  BrowserEngine Will be respomsible to render the web page
+     BrowserEngine will perform 2 steps to load the html page
+
+     1. It reads the html file and creat an object for each html TAG
+     2. Objects are linked to form a tree . this tree is called as DOME(Document Object Model)
+     
+     DOM - It is used to acces and maniuplate html Elements
+
+     Access - document.getElementById
+     maniuplate/modifiy - innerHTML
+
+     // Creat IMAGE dynamically*/-->
+
+
+
     
 </body>
 </html>

@@ -8,25 +8,88 @@
 
     <script>
         function displayData1(){
+    /**************************************************************************************************************/
+     // Player & Name creating
             console.log("P K Mani")
             let player1 = document.getElementById("player1")
             console.log(player1)
             player1.innerHTML = "P K Mani"
             player1.style.color = "red"
+    /****************************************************************************************************************/
+            // Image & size creating
+            let image = document.createElement("img")
+            image.src = "IMG_20220615_135840-01-01.jpg"
+            image.style.width='200px'
+            image.style.height ='200px'
+    /*************************************************************************************************************/
+            // Loading ub Image
+            document.body.appendChild(image)
+            let loadingImage =document.getElementById("loadingImage")
+            loadingImage.appendChild(image)
+/********************************************************************************************************************/
+           // Paragrap creating
+            let paragraph=document.createElement("p")
+            let text=document.createTextNode("P K Mani India no :1 player")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main=document.getElementById("main")
+            main.appendChild(paragraph)
+            main.style.color ='blue'
+      /*******************************************************************/      
+
         }
         function displayData2(){
-            console.log("Rohit S")
+            console.log("Virat Kholi")
             let player2 = document.getElementById("player2")
             console.log(player2)
-            player2.innerHTML = "Rohit S"
+            player2.innerHTML = "Virat Kholi"
             player2.style.color = "black"
+            let image =document.createElement("img")
+            image.src= "virat kholi.jpg"
+            image.style.width = "200px"
+            document.body.appendChild(image)
+            let loadingImage1=document.getElementById("loadingImage1")
+            loadingImage1.appendChild(image)
+
+            let paragraph=document.createElement("p")
+            let text=document.createTextNode("virat kholi is run mechine :1 player")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+           let main1=document.getElementById("main1")
+            main1.appendChild(paragraph)
+            main1.style.color = 'red'
+
         }
-        function displayData3(){
-            console.log("Shikar Dhawan")
+       
+/**********************************************************************************************************************/
+            function displayData3(){
+            console.log("Jadeja")
             let player3 = document.getElementById("player3")
             console.log(player3)
-            player3.innerHTML = "Shikar Dhawan"
+            player3.innerHTML = "Jadeja"
             player3.style.color = "blue"
+/***********************************************************************************************************************/
+            let image = document.createElement("img")
+            image.src = "jedeja.jpeg"
+            image.style.width='200px'
+            document.body.appendChild(image)
+/****************************************************************************************************************************/
+            let loadingImage2 =document.getElementById("loadingImage2")
+            loadingImage2.appendChild(image)
+/***************************************************************************************************************************/
+            let paragraph=document.createElement("p")
+            let text=document.createTextNode("jadaja India no :1 player")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main2=document.getElementById("main2")
+            main2.appendChild(paragraph)
+            main2.style.color = 'yellow'
+            
+
+
         }
         function displayData4(){
             console.log("KL Rahul")
@@ -34,6 +97,23 @@
             console.log(player4)
             player4.innerHTML = "KL Rahul"
             player4.style.color = "Brown"
+            let image = document.createElement("img")
+            image.src = "KL-Rahul.jpg"
+            image.style.width='200px'
+           // image.style.height="200px"
+            document.body.appendChild(image)
+            let loadingImage3 =document.getElementById("loadingImage3")
+            loadingImage3.appendChild(image)
+
+            let paragraph=document.createElement("p")
+            let text =document.createTextNode("k l Rahul is open batting :1")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main3=document.getElementById("main3")
+            main3.appendChild(paragraph)
+            main3.style.color = 'pink'
+    /*****************************************************************************************************/
         }
         function displayData5(){
             console.log("S Iyer")
@@ -41,6 +121,22 @@
             console.log(player5)
             player5.innerHTML = "S Iyer"
             player5.style.color = "pink"
+            let image=document.createElement("img")
+            image.src="tour-6.jpeg"
+            image.style.width="200px"
+            document.body.appendChild(image)
+            let loadingImage4=document.getElementById("loadingImage4")
+            loadingImage4.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("S Ayyer poupular badsman no :2")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main4=document.getElementById("main4")
+            main4.appendChild(paragraph)
+            main4.style.color = 'green'
+/*************************************************************************************************/
         }
         function displayData6(){
             console.log("Rishab Pant")
@@ -48,6 +144,23 @@
             console.log(player6)
             player6.innerHTML = "Rishab Pant"
             player6.style.color = "black"
+
+            let image=document.createElement("img")
+            image.src="Rishak Pant.jpeg"
+            image.style.width = "200px"
+
+            let loadingImage5=document.getElementById("loadingImage5")
+            loadingImage5.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Rishak Pant is Wicket Keeper")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main5 = document.getElementById("main5")
+            main5.appendChild(paragraph)
+            main5.style.color = 'rose'
+/****************************************************************************************************************************/
         }
         function displayData7(){
             console.log("Hardik Pandy")
@@ -55,27 +168,87 @@
             console.log(player7)
             player7.innerHTML = "Hardik Pandy"
             player7.style.color = "black"
+            let image=document.createElement("img")
+            image.src="hardik pandiyaa.jpeg"
+            image.style.width = "200px"
+            image.loadingImage6=document.getElementById("loadingImage6")
+            loadingImage6.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Hartik Pandiya is All Rouder")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main6 = document.getElementById("main6")
+            main6.appendChild(paragraph)
+            main6.style.color = 'blue'
+/*************************************************************************************************************/
         }
         function displayData8(){
-            console.log("R Jadeja")
+            console.log("M S Dhoni")
             let player8 = document.getElementById("player8")
             console.log(player8)
-            player8.innerHTML = "R Jadeja"
+            player8.innerHTML = "M S Dhoni"
             player8.style.color = "pink"
+            let image=document.createElement("img")
+            image.src="dhoni.jpeg"
+            image.style.width="200px"
+            let loadingImage7=document.getElementById("loadingImage7")
+            loadingImage7.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("M SDhoni Captan Cool :1")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main7 = document.getElementById("main7")
+            main7.appendChild(paragraph)
+            main7.style.color = 'green'
+/************************************************************************************************/
         }
         function displayData9(){
-            console.log("M Shami")
+            console.log("Aswin")
             let player9 = document.getElementById("player9")
             console.log(player9)
-            player9.innerHTML = "M Shami"
+            player9.innerHTML = "Aswin"
             player9.style.color = "blue"
+            let image=document.createElement("img")
+            image.src="Aswin.webp"
+            image.style.width="200px"
+            let loadingImage8 =document.getElementById("loadingImage8")
+            loadingImage8.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Aswin is Bowler in India : 1")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main8 = document.getElementById("main8")
+            main8.appendChild(paragraph)
+            main8.style.color = 'blue'
+    /*********************************************************************************************/
         }
         function displayData10(){
-            console.log("M Siraj")
+            console.log("Natraj")
             let player10 = document.getElementById("player10")
             console.log(player10)
-            player10.innerHTML = "M Siraj"
+            player10.innerHTML = "Natraj"
             player10.style.color = "red"
+            let image=document.createElement("img")
+            image.src="natraj photo.jpeg"
+            image.style.width="200px"
+            let loadingImage9=document.getElementById("loadingImage9")
+            loadingImage9.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Nadraj is Tamil Nadu Player no : 1")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main9 = document.getElementById("main9")
+            main9.appendChild(paragraph)
+            main9.style.color = 'green'
+/***************************************************************************************************************/
         }
         function displayData11(){
             console.log("Y Chahal")
@@ -83,15 +256,46 @@
             console.log(player11)
             player11.innerHTML = "Y Chahal"
             player11.style.color = "black"
+            let image=document.createElement("img")
+            image.src="yuzvendra Chahal.jpg"
+            image.style.width="200px"
+            let loadingImage10=document.getElementById("loadingImage10")
+            loadingImage10.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Chahal is India Spin Bowler no :2")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main10 = document.getElementById("main10")
+            main10.appendChild(paragraph)
+            main10.style.color = 'blue'
+/*************************************************************************************************************/
         }
 
         function displayDetials12(){
-            console.log("P K Mani")
+            console.log("Hurtick Pandiya")
             let player12 =document.getElementById("player12")
             console.log(player12)
-            player12.innerHTML = "P K Mani"
+            player12.innerHTML = "Hurtick Pandiya"
             player12.style.color = "blue"
+            let image=document.createElement("img")
+            image.src="hardik pandiyaa.jpeg"
+            image.style.width="200px"
+            let loadingImage11=document.getElementById("loadingImage11")
+            loadingImage11.appendChild(image)
+
+            let paragraph = document.createElement("p")
+            let text = document.createTextNode("Hurtick Pandiyaa is All Rounder")
+            paragraph.appendChild(text)
+
+            console.log(paragraph)
+            let main11 = document.getElementById("main11")
+            main11.appendChild(paragraph)
+            main11.style.color = 'blue'
+/***********************************************************************************************************/
         }
+        
 
     </script>
 </head>
@@ -99,39 +303,63 @@
     <center h1>India Team</h1><br>
     <button onclick="displayData1()">Player 1</button>
     <div id="player1"></div>
+    <div id="loadingImage"></div>
+    <div id="main"></div>
     <br>
     <button onclick="displayData2()">Player 2</button>
     <div id="player2"></div>
+    <div id="loadingImage1"></div>
+    <div id="main1"></div>
     <br>
     <button onclick="displayData3()">Player 3</button>
     <div id="player3"></div>
+    <div id="loadingImage2"></div>
+    <div id="main2"></div>
     <br>
     <button onclick="displayData4()">Player 4</button>
     <div id="player4"></div>
+    <div id="loadingImage3"></div>
+    <div id="main3"></div>
     <br>
     <button onclick="displayData5()">Player 5</button>
     <div id="player5"></div>
+    <div id="loadingImage4"></div>
+    <div id="main4"></div>
     <br>
     <button onclick="displayData6()">Player 6</button>
     <div id="player6"></div>
+    <div id="loadingImage5"></div>
+    <div id="main5"></div>
     <br>
     <button onclick="displayData7()">Player 7</button>
     <div id="player7"></div>
+    <div id="loadingImage6"></div>
+    <div id="main6"></div>
     <br>
     <button onclick="displayData8()">Player 8</button>
     <div id="player8"></div>
+    <div id="loadingImage7"></div>
+    <div id="main7"></div>
     <br>
     <button onclick="displayData9()">Player 9</button>
     <div id="player9"></div>
+    <div id="loadingImage8"></div>
+    <div id="main8"></div>
     <br>
     <button onclick="displayData10()">player10</button>
     <div id="player10"></div>
+    <div id="loadingImage9"></div>
+    <div id="main9"></div>
     <br>
     <button onclick="displayData11()">Player 11</button>
     <div id="player11"></div>
+    <div id="loadingImage10"></div>
+    <div id="main10"></div>
     <br>
     <button onclick="displayDetials12()">player 12</button>
     <div id="player12"></div>
-    
+    <div id="loadingImage11"></div>
+    <div id="main11"></div>
+   
 </body>
 </html>
